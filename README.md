@@ -1,4 +1,4 @@
-https://github.com/aybrkaknc/RedditUnfollowAllhttps://github.com/aybrkaknc/RedditUnfollowAll# Reddit Unfollow All
+# Reddit Unfollow All
 
 [English](#english) | [Türkçe](#türkçe)
 
