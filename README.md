@@ -1,4 +1,4 @@
-# Reddit Unfollow All
+https://github.com/aybrkaknc/RedditUnfollowAllhttps://github.com/aybrkaknc/RedditUnfollowAll# Reddit Unfollow All
 
 [English](#english) | [Türkçe](#türkçe)
 
@@ -51,6 +51,3 @@ Reddit üzerindeki alt dizin (subreddit) aboneliklerinden çıkma işlemini otom
 ### Önemli Notlar
 
 Betik, toplu DOM etkileşimi üzerinden çalışmaktadır. Büyük listelerde stabiliteyi korumak amacıyla "Normal" veya "Yavaş" hız seçeneklerinin kullanılması önerilir.
-
----
-*Developer: [aybrkaknc](https://github.com/aybrkaknc)*
