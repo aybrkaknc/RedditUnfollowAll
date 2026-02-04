@@ -2,10 +2,6 @@
 
 [English](#english) | [Türkçe](#türkçe)
 
----
-
-## English
-
 A JavaScript userscript that automates the unsubscription process from Reddit subreddits. It provides a non-intrusive UI overlay to manage mass actions while respecting platform rate limits.
 
 ### Technical Features
@@ -27,9 +23,7 @@ A JavaScript userscript that automates the unsubscription process from Reddit su
 
 This script performs batch DOM interactions. It is recommended to use "Normal" or "Slow" presets for large subscription lists to ensure request stability.
 
----
-
-## Türkçe
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Reddit üzerindeki alt dizin (subreddit) aboneliklerinden çıkma işlemini otomatize eden bir JavaScript kullanıcı betiğidir. Platformun hız limitlerini (rate-limit) gözeterek çalışan ve süreci takip etmeyi kolaylaştıran bir arayüz sunar.
 
