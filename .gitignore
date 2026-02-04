@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+.agent/
+.gemini/
+*.log
+node_modules/
+dist/
+build/
+extension/icons/*.webp
