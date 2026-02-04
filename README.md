@@ -1,25 +1,56 @@
-Bu GitHub deposu, Reddit'teki aboneliklerinizi daha kolay ve hızlı bir şekilde yönetmek isteyen kullanıcılar için tasarlanmış basit bir JavaScript kullanıcı betiği içerir. Özellikle, Reddit'in /subreddits/ sayfasında bulunan abone olunan tüm alt dizinlerden (subreddit'lerden) toplu olarak çıkma işlevini otomatikleştirmektedir.
+# Reddit Unfollow All
 
-Temel Özellikler:
+[English](#english) | [Türkçe](#türkçe)
 
-Tek Tıklamayla Toplu Abonelik İptali: Reddit'in subreddits sayfasında listelenen tüm aboneliklerden manuel olarak tek tek çıkmak yerine, bu betik sayesinde tek bir onayla tümünden çıkabilirsiniz.
-    
-Tampermonkey Uyumlu: Betik, Firefox için Tampermonkey ve Chrome için Greasemonkey/Tampermonkey gibi tarayıcı eklentileri aracılığıyla kolayca yüklenebilir ve çalıştırılabilir.
-    
-Eski Reddit Arayüzü Desteği: Betik, Reddit'in eski arayüzü (old.reddit.com) yapısına uygun olarak tasarlanmıştır ve abonelikten çıkma butonlarını bu arayüzde doğru şekilde bulup etkileşime geçebilir.
-    
-Güvenli Çalışma: Her bir abonelikten çıkma işlemi arasında küçük bir gecikme (timeout) bırakılarak, Reddit sunucularına aşırı yük bindirilmesi veya API kısıtlamalarına takılma riskini azaltır.
-***
-Nasıl Kullanılır?
+---
 
->- Tarayıcınıza (Firefox için Tampermonkey önerilir) Tampermonkey eklentisini kurun.
->
->- Bu depodaki JavaScript dosyasını (veya doğrudan yukarıda verilen kodu) Tampermonkey'de yeni bir betik olarak kaydedin.
->
->- https://www.reddit.com/subreddits/ adresine gidin.
->
->- Betik otomatik olarak çalışacak ve size abonelikten çıkma işlemini onaylamanız için bir uyarı gösterecektir. Onayınızın ardından işlem başlayacaktır.
-***
-Uyarı:
+## English
 
-Bu betik, onayınızla birlikte geri alınamaz bir şekilde tüm aboneliklerinizden çıkacaktır. Lütfen kullanmadan önce işlemi gerçekleştirmek istediğinizden tamamen emin olun. Depoda bulunan kodu inceleyerek veya bir sorunla karşılaştığınızda bir 'issue' açarak katkıda bulunabilirsiniz.
+A JavaScript userscript that automates the unsubscription process from Reddit subreddits. It provides a non-intrusive UI overlay to manage mass actions while respecting platform rate limits.
+
+### Technical Features
+
+- **UI Overlay**: Draggable interface with window controls (Minimize, Close) for custom positioning.
+- **Throttling Control**: Preset execution intervals (200ms to 1500ms) to prevent API rate-limiting.
+- **State Management**: Displays total/remaining counts and an execution log within the overlay.
+- **I18n Engine**: Automatic browser language detection (supports EN and TR).
+- **Selector Engine**: Compatible with both legacy (`old.reddit.com`) and modern Reddit DOM structures.
+
+### Installation & Usage
+
+1. **Userscript Manager**: Ensure a manager like [Tampermonkey](https://www.tampermonkey.net/) is installed in your browser.
+2. **Setup**: Create a new script in your manager and paste the contents of `betik.js`.
+3. **Execution**: Navigate to [https://www.reddit.com/subreddits/](https://www.reddit.com/subreddits/).
+4. **Operation**: Use the "START" button on the UI panel to initiate the process. The panel can be repositioned via dragging the header.
+
+### Technical Notes
+
+This script performs batch DOM interactions. It is recommended to use "Normal" or "Slow" presets for large subscription lists to ensure request stability.
+
+---
+
+## Türkçe
+
+Reddit üzerindeki alt dizin (subreddit) aboneliklerinden çıkma işlemini otomatize eden bir JavaScript kullanıcı betiğidir. Platformun hız limitlerini (rate-limit) gözeterek çalışan ve süreci takip etmeyi kolaylaştıran bir arayüz sunar.
+
+### Teknik Özellikler
+
+- **UI Katmanı**: Sürüklenebilir ve pencere kontrollerine (Küçült, Kapat) sahip kontrol paneli.
+- **Throttling (Hız Sınırı)**: API limitlerine takılmamak için ön tanımlı gecikme süreleri (200ms - 1500ms).
+- **Durum Takibi**: Panel üzerinden toplam/kalan işlem sayısı ve anlık log kaydı.
+- **Dil Desteği (i18n)**: Tarayıcı dilini otomatik algılama (TR ve EN).
+- **DOM Uyumluluğu**: Eski (`old.reddit.com`) ve modern Reddit arayüzleri için seçici desteği.
+
+### Kurulum ve Kullanım
+
+1. **Script Yöneticisi**: Tarayıcınızda [Tampermonkey](https://www.tampermonkey.net/) benzeri bir eklenti kurulu olduğundan emin olun.
+2. **Kurulum**: Yeni bir betik oluşturun ve `betik.js` içeriğini yapıştırın.
+3. **Çalıştırma**: [https://www.reddit.com/subreddits/](https://www.reddit.com/subreddits/) sayfasına gidin.
+4. **Yönetim**: Panel üzerindeki "BAŞLAT" butonu ile süreci başlatın. Panel başlığından tutularak ekranın herhangi bir yerine sürüklenebilir.
+
+### Önemli Notlar
+
+Betik, toplu DOM etkileşimi üzerinden çalışmaktadır. Büyük listelerde stabiliteyi korumak amacıyla "Normal" veya "Yavaş" hız seçeneklerinin kullanılması önerilir.
+
+---
+*Developer: [aybrkaknc](https://github.com/aybrkaknc)*
